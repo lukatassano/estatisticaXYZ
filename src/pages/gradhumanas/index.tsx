@@ -1,10 +1,38 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+
+import colors from "../../colors";
+
+import Footer from "../../components/Footer";
+import Logo from "../../components/Logo";
+import Button from "../../components/Button";
+
+import "./styles.css";
 
 // import { Container } from './styles';
 
 const gradhumanas: React.FC = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const history = useHistory();
+
+  function handleSubmit() {
+    history.push("/grade-humanas/conteudo");
+  }
+
   return (
     <>
+      <header>
+        <Logo color={colors.gradhumanas} />
+        <div className="buttons">
+          <Button
+            to="/sobre-nos"
+            title="Sobre nós"
+            color={colors.gradhumanas}
+          />
+          <Button to="/" title="Página inicial" color={colors.gradhumanas} />
+        </div>
+      </header>
+
       <div className="contexto">
         <h1>Graduação em Humanas</h1>
 
@@ -37,7 +65,7 @@ const gradhumanas: React.FC = () => {
           <div className="topicos">
             <ol>
               <li>
-                <a href="../gradhumanas/conteudo/template.html">
+                <a onClick={handleSubmit}>
                   TESTE DE HIPOTESE BLA BLA BLA BLA BLA BLA BAL BLA
                 </a>
               </li>
@@ -104,36 +132,7 @@ const gradhumanas: React.FC = () => {
         </div>
       </div>
 
-      <footer>
-        <div>
-          <h2>Estatística XYZ</h2>
-        </div>
-
-        <div>
-          <ul>
-            <li>
-              <a href="mailto:elias.doering@ufrgs.br">
-                <img src="../../assets/@.svg"></img>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/geliasrd/estatisticaXYZ"
-                target="_blank"
-              >
-                <img src="../../assets/github.svg"></img>
-              </a>
-            </li>
-
-            {/* <!-- <li>
-                <a href="">
-                    <img src="../../assets/discord.svg"></img>
-                </a>
-            </li> --> */}
-          </ul>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };

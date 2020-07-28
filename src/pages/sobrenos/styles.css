@@ -1,36 +1,34 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:200,400,500,700&display=swap");
-
-body header {
+/* body header {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-body header div {
+/* body header div {
   margin: 20px 50px;
-}
+} */
 
-body header .tit {
+/* body header .tit {
   display: flex;
   align-items: flex-start;
   justify-content: baseline;
   flex-direction: row;
-}
+} */
 
-body header .tit img {
+/* body header .tit img {
   height: 38px;
   width: 38px;
   margin-right: 10px;
-}
+} */
 
-body header h1 {
+/* body header h1 {
   color: var(--secundaria);
-}
+} */
 
-body header .botao {
+/* body header .botao {
   margin-top: 18px;
-}
+} */
 
-body header .botao a {
+/* body header .botao a {
   margin-top: 8px;
   padding: 10px 15px;
   border: 0;
@@ -45,13 +43,13 @@ body header .botao a {
 
 body header div.botao a:hover {
   opacity: 100%;
-}
+} */
 
-body {
+/* body {
   display: flex;
   flex: 1;
   flex-direction: column;
-}
+} */
 
 .texto {
   display: flex;
@@ -92,6 +90,12 @@ body {
   padding: 0 20px;
   cursor: pointer;
   transform: translateY(-100px);
+  transition: 1.5s;
+}
+
+#nos .grade .cont:hover {
+  transform: translateY(-110px);
+  box-shadow: 0 0 200px #fff;
 }
 
 #nos .grade .cont p {
@@ -238,46 +242,4 @@ body {
 
 .agradecimentos li a:hover {
   color: var(--claro);
-}
-
-footer {
-  display: flex;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  border: 0;
-  margin-top: 60px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--fundo);
-}
-
-footer div {
-  margin: 0 70px;
-}
-
-footer ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-}
-
-footer ul li a {
-  display: flex;
-  flex: 1;
-  margin: 50px 20px;
-}
-
-footer ul li a img {
-  height: 40px;
-  width: 40px;
-  transition: 0.3s;
-  opacity: 50%;
-}
-
-footer ul li a img:hover {
-  opacity: 100%;
 }

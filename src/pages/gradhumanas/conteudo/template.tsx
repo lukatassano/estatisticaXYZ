@@ -1,60 +1,40 @@
 import React from "react";
+// import { useHistory } from "react-router-dom";
 
-// import { Container } from './styles';
+import colors from "../../../colors";
+
+import Logo from "../../../components/Logo";
+import Button from "../../../components/Button";
+import Footer from "../../../components/Footer";
+import Tree from "../../../components/Tree";
+
+// import "./conteudo.css";
+import { Container } from "./styles";
 
 const conteudo: React.FC = () => {
-  return (
-    <>
-      <header>
-        <div className="tit">
-          <img src="../../../assets/iconehum.svg" alt="" />
-          <h1>Estatística XYZ</h1>
-        </div>
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  // const history = useHistory();
 
-        <div>
-          <button>Sobre nós</button>
-          <button>Voltar pra Página Inicial</button>
+  // function handleSubmit(url: string) {
+  //   history.push(`${url}`);
+  // }
+
+  return (
+    <Container>
+      <header>
+        <Logo color={colors.gradhumanas} />
+        <div className="buttons">
+          <Button
+            to="/sobre-nos"
+            title="Sobre nós"
+            color={colors.gradhumanas}
+          />
+          <Button to="/" title="Página inicial" color={colors.gradhumanas} />
         </div>
       </header>
 
       <div className="container">
-        <div className="arvore">
-          <ul>
-            <a href="">
-              <li className="cap">2</li>
-              <p>Prob</p>
-            </a>
-
-            <a>
-              <li>
-                1
-                <a>
-                  <li></li>
-                </a>
-              </li>
-            </a>
-
-            <a>
-              <li></li>
-            </a>
-
-            <a>
-              <li></li>
-            </a>
-
-            <a>
-              <li></li>
-            </a>
-
-            <a>
-              <li></li>
-            </a>
-
-            <a>
-              <li></li>
-            </a>
-          </ul>
-        </div>
+        <Tree />
 
         <div className="texto">
           <h1>Título!!</h1>
@@ -184,42 +164,11 @@ const conteudo: React.FC = () => {
           </p>
         </div>
 
-        <div className="ad">
-          <img src="/src/assets/ad.jpeg" alt="" />
-        </div>
+        <div className="ad"></div>
       </div>
 
-      <footer>
-        <div>
-          <h2>Estatística XYZ</h2>
-        </div>
-
-        <div>
-          <ul>
-            <li>
-              <a href="mailto:elias.doering@ufrgs.br">
-                <img src="../../../assets/@.svg"></img>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/geliasrd/estatisticaXYZ"
-                target="_blank"
-              >
-                <img src="../../../assets/github.svg"></img>
-              </a>
-            </li>
-
-            {/* <!-- <li>
-                  <a href="">
-                      <img src="../../../assets/discord.svg"></img>
-                  </a>
-              </li> --> */}
-          </ul>
-        </div>
-      </footer>
-    </>
+      <Footer />
+    </Container>
   );
 };
 

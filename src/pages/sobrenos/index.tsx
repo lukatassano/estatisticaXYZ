@@ -1,17 +1,34 @@
 import React from "react";
+import colors from "../../colors";
 // import { Link } from "react-router-dom";
 
-import Header from "../../components/Header";
+import Logo from "../../components/Logo";
+import Button from "../../components/Button";
+import Footer from "../../components/Footer";
 
-import "./styles.css";
-// import { Container } from './styles';
+import Luka from "../../assets/avatar/luka.jpg";
+import Gui from "../../assets/avatar/gui.jpg";
+import Chico from "../../assets/avatar/chico.jpg";
+
+import Github from "../../assets/githubescuro.svg";
+import Linkedin from "../../assets/linkedinescuro.svg";
+import Email from "../../assets/@escuro.svg";
+import Site from "../../assets/wwwescuro.svg";
+
+import { FaLinkedinIn } from "react-icons/fa";
+
+// import "./styles.css";
+import { Container } from "./styles";
 
 const sobrenos: React.FC = () => {
   return (
-    <>
-      <Header to="/" title="Página inicial" />
+    <Container>
+      <header>
+        <Logo color={colors.secundaria} />
+        <Button to="/" title="Página inicial" color={colors.secundaria} />
+      </header>
 
-      <div id="nos">
+      <div className="nos">
         <div className="texto">
           <h1>Somos Estudantes!</h1>
           <h3>
@@ -24,37 +41,38 @@ const sobrenos: React.FC = () => {
 
         <div className="grade">
           <div className="cont" id="luka">
-            <img src="../../assets/luka.jpg" alt="" className="avatar"></img>
+            <img src={Luka} alt="Avatar do Luka" className="avatar"></img>
             <h2>
               Luka Avila <br></br> Tassano
             </h2>
-            {/* <!-- <p className="cargo">CTO</p> --> */}
+            {/* <p className="cargo">CTO</p> */}
             <p>
               Estudante de desenvolvimento Web (Front-end e Back-end).
               Desenvolver em JavaScript/Typescript, React, React Native e
               Node.js.
             </p>
             <div className="contato">
-              <a href="mailto:">
-                <img src="../../assets/@escuro.svg"></img>
+              <a href="mailto:lukatassano070@gmail.com">
+                <img src={Email} alt="Email do Luka"></img>
               </a>
               <a href="https://lukatassano.herokuapp.com/" target="_blank">
-                <img src="../../assets/wwwescuro.svg"></img>
+                <img src={Site} alt="Site do Luka"></img>
               </a>
               <a href="https://github.com/lukatassano" target="_blank">
-                <img src="../../assets/githubescuro.svg" alt=""></img>
+                <img src={Github} alt="Github do Luka" />
               </a>
               <a
                 href="https://www.linkedin.com/in/luka-avila-tassano-06aa52160/"
                 target="_blank"
               >
-                <img src="../../assets/linkedinescuro.svg"></img>
+                <img src={Linkedin} alt="LinkedIn do Luka" />
+                {/* <FaLinkedinIn size="54" color="#000000" /> */}
               </a>
             </div>
           </div>
 
           <div className="cont" id="guilherme">
-            <img src="../../assets/gui.jpg" alt="" className="avatar"></img>
+            <img src={Gui} alt="Avatar do Guilherme" className="avatar"></img>
             <h2>
               Guilherme Elias <br></br>Rodriguez Doering
             </h2>
@@ -68,13 +86,13 @@ const sobrenos: React.FC = () => {
 
             <div className="contato">
               <a href="mailto:elias.doering@ufrgs.br">
-                <img src="../../assets/@escuro.svg"></img>
+                <img src={Email} alt="Email do Guilherme"></img>
               </a>
               {/* <!-- <a href="https://geliasrd.github.io/" target="_blank">
                       <img src="../../assets/wwwescuro.svg"></img> --> */}
               {/* </a> */}
               <a href="https://github.com/geliasrd" target="_blank">
-                <img src="../../assets/githubescuro.svg"></img>
+                <img src={Github} alt="Github do Guilherme"></img>
               </a>
               {/* <!-- <a href="https://www.linkedin.com/in/guilherme-elias-rodriguez-doering-a473511b2/" target="_blank">
                       <img src="../../assets/linkedinescuro.svg"></img> --> */}
@@ -83,7 +101,7 @@ const sobrenos: React.FC = () => {
           </div>
 
           <div className="cont" id="chico">
-            <img src="../../assets/chico.jpg" alt="" className="avatar"></img>
+            <img src={Chico} alt="Avatar do Francisco" className="avatar"></img>
             <h2>Francisco Barabosa Pires</h2>
 
             {/* <!-- <p className="cargo">Produtor de Conteúdo</p> --> */}
@@ -96,26 +114,23 @@ const sobrenos: React.FC = () => {
 
             <div className="contato">
               <a href="mailto:franciscopires2000@gmail.com">
-                <img src="../../assets/@escuro.svg"></img>
+                <img src={Email} alt="Email do Francisco"></img>
               </a>
               <a
                 href="https://www.linkedin.com/in/francisco-barbosa-pires-b2b6b51a0/"
                 target="_blank"
               >
-                <img src="../../assets/linkedinescuro.svg"></img>
+                <img src={Linkedin} alt="LinkedIn do Francisco"></img>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* </div> */}
-
       <div className="agradecimentos">
         <h2>Agradecimentos:</h2>
         <ul>
           <li>
-            {" "}
             <a href="https://www.instagram.com/debemgab/">
               Gabriel de Bem: Logo do Estatística XYZ
             </a>
@@ -123,37 +138,8 @@ const sobrenos: React.FC = () => {
         </ul>
       </div>
 
-      <footer>
-        <div>
-          <h2>Estatística XYZ</h2>
-        </div>
-
-        <div>
-          <ul>
-            <li>
-              <a href="mailto:elias.doering@ufrgs.br">
-                <img src="../../assets/@.svg"></img>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://github.com/geliasrd/estatisticaXYZ"
-                target="_blank"
-              >
-                <img src="../../assets/github.svg"></img>
-              </a>
-            </li>
-
-            <li>
-              <a href="">
-                <img src="../../assets/discord.svg"></img>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </>
+      <Footer />
+    </Container>
   );
 };
 
