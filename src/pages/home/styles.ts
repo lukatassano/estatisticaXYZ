@@ -4,6 +4,8 @@ export const Container = styled.div`
   header {
     display: flex;
     flex: 1;
+
+    
   }
 
   .texto {
@@ -19,6 +21,11 @@ export const Container = styled.div`
       color: #444;
       font-size: 70px;
       opacity: 100%;
+
+      @media (max-width: 600px) {
+        font-size: 40px;
+        width: 95vw;
+      }
     }
 
     h3 {
@@ -29,6 +36,11 @@ export const Container = styled.div`
       text-align: start;
       width: 70vw;
       font-weight: 200;
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+        width: 90vw;
+      }
     }
   }
 
@@ -41,27 +53,40 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     background-color: var(--secundaria);
-  
 
-  .bloco {
-    display: flex;
-    transition: 0.4s;
-    outline: none;
-    border-radius: 8px;
-    color: black;
-    margin: 0 50px;
-    transform: translateY(-130px);
-
-    &:hover {
-      transform: translateY(-145px);
+    @media (max-width: 800px) {
+      flex-direction: column;
     }
 
-    .link {
+    .bloco {
       display: flex;
-      padding: 40px 20px;
-      height: 550px;
-      width: 360px;
-    }
+      transition: 0.4s;
+      outline: none;
+      border-radius: 8px;
+      color: black;
+      margin: 0 50px;
+      transform: translateY(-130px);
+
+      @media (max-width: 900px) {
+        width: 250px;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 1200px) {
+        width: 250px;
+        margin: 20px 5px;
+      }
+
+      &:hover {
+        transform: translateY(-145px);
+      }
+
+      .link {
+        display: flex;
+        padding: 40px 20px;
+        height: 550px;
+        width: 360px;
+      }
   }
 
 
@@ -113,13 +138,8 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    .texto h3 {
-      width: 250px;
-      text-align: start;
-    }
 
     .gradecursos {
-      flex-direction: column;
     }
 
     .bloco {

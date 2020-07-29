@@ -114,8 +114,6 @@ export const Container = styled.div`
             font-size: 20px;
           }
 
-          
-
           .contato {
             display: flex;
             flex: 1;

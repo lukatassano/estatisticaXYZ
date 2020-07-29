@@ -22,22 +22,23 @@ const home: React.FC = () => {
 
       <div className="texto">
         <h1>
-          Uma plataforma para ensino de estatística, de alunos para alunos.
+          Uma plataforma para ensino de estatística,
+          <br /> de alunos para alunos.
         </h1>
         <h3>
-          &emsp; &emsp; Estatística XYZ é uma plataforma voltada para a difusão
-          do ensino em estatística, sendo um projeto particular de um grupo de
+          &emsp; Estatística XYZ é uma plataforma voltada para a difusão do
+          ensino em estatística, sendo um projeto particular de um grupo de
           jovens alunos. Queremos auxiliar, não apenas os estudantes da área de
           estatística e matemática, mas todos os estudantes ou profissionais que
           buscam aprender e utilizar as ferramentas e os conceitos que a
           estatística disponibiliza para poder interpretar e entender melhor o
           mundo em que vivemos. <br />
-          &emsp; &emsp; Observamos que muitas pessoas têm dificuldades no
-          aprendizado e aplicação do conteúdo de estatística, seja no trabalho,
-          faculdade, escola ou até na vida. E por isso, decidimos fazer a nossa
-          parte e desenvolver conteúdo de qualidade e acessível,
-          disponibilizando-o de maneira gratuita para todos na internet. <br />
-          &emsp; &emsp; Sabemos que diferentes áreas do conhecimento necessitam
+          &emsp; Observamos que muitas pessoas têm dificuldades no aprendizado e
+          aplicação do conteúdo de estatística, seja no trabalho, faculdade,
+          escola ou até na vida. E por isso, decidimos fazer a nossa parte e
+          desenvolver conteúdo de qualidade e acessível, disponibilizando-o de
+          maneira gratuita para todos na internet. <br />
+          &emsp; Sabemos que diferentes áreas do conhecimento necessitam
           diferentes abordagens dos tópicos da estatística. Levando isso em
           consideração, alocamos nossos materiais em diferentes cursos, cada um
           visando preparar da maneira mais adequada seu público-alvo.

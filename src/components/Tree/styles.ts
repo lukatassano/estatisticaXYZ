@@ -90,7 +90,7 @@ export const Container = styled.div`
     color: #fff;
     height: 0px;
     font-weight: 400;
-    margin: 8px 0 22px;
+    /* margin: 8px 0 22px; */
     transition: 0.5s;
   }
 
