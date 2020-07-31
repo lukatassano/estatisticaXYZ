@@ -6,7 +6,7 @@ const list = [
     articles: [
       {
         title: "ssssjfewjefjwejfwejewjfjjfewjejjfkwejjewjewj",
-        href: "url",
+        href: "conteudo",
       },
       {
         title: "artigo2",

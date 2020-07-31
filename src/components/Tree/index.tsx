@@ -1,10 +1,17 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import { Container } from "./styles";
 
 import list from "../../articles";
 
 const Tree: React.FC = () => {
+  const history = useHistory();
+
+  function handleSubmit(href: string) {
+    history.push(`/grade-humanas/${href}`);
+  }
+
   return (
     <Container>
       <div className="contents">
@@ -19,7 +26,7 @@ const Tree: React.FC = () => {
             <div className="topics">
               <ol>
                 {curso.articles.map((article) => (
-                  <li>
+                  <li onClick={() => handleSubmit(article.href)}>
                     <a>{article.title}</a>
                   </li>
                 ))}
