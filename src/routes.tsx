@@ -9,6 +9,7 @@ import Gradhumanas from "./pages/gradhumanas";
 import GradeHumanasConteudo from "./pages/gradhumanas/conteudo/template";
 
 import Tree from "./components/Tree";
+import Logo from "./components/Logo";
 
 const Routes = () => {
   return (
@@ -18,6 +19,7 @@ const Routes = () => {
       <Route exact path="/grade-humanas" component={Gradhumanas} />
       <Route path="/grade-humanas/conteudo" component={GradeHumanasConteudo} />
       <Route path="/tree" component={Tree} />
+      <Route exact path="/logo" component={Logo} />
       {/* <Route path="/grade-exatas" component={Gradexatas} />
       <Route path="/ensino-medio" component={Ensinomedio} /> */}
     </BrowserRouter>

@@ -17,9 +17,42 @@ export const Container = styled.footer`
     justify-content: space-around;
   }
 
-  h2 {
-    font-size: 38px;
-    margin-left: 80px;
+  .centro {
+    display: block;
+    /* position: fixed; */
+    /* left: 50vw; */
+
+    width: 48px;
+    height: auto;
+    transform: translateX(-110px);
+    /* align-self: center; */
+    opacity: 50%;
+
+    path {
+      fill: var(--secundaria);
+      stroke: none;
+    }
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    /* font-size: 38px; */
+    /* margin-left: 80px; */
+    margin-left: 50px;
+    width: 400px;
+
+    @media (max-width: 670px) {
+      width: 200px;
+    }
+
+    path {
+      fill: var(--secundaria);
+      opacity: 50%;
+      stroke: none;
+    }
 
     @media (max-width: 600px) {
       margin-left: 0;
@@ -50,7 +83,7 @@ export const Container = styled.footer`
         height: 58px;
         width: 58px;
         flex: 1;
-        margin: 50px 20px;
+        margin: 50px 5px;
         transition: 0.3s;
 
         @media (max-width: 600px) {
@@ -66,6 +99,10 @@ export const Container = styled.footer`
 
         &:hover svg path {
           fill: #eee;
+        }
+
+        &:active {
+          transform: translateY(3px);
         }
 
         svg {

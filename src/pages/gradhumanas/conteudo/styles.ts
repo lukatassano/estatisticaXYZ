@@ -10,6 +10,22 @@ export const Container = styled.div`
   margin: 20px 50px;
 } */
 
+  header {
+    display: flex;
+    flex: 1;
+    height: 100px;
+    justify-content: space-between;
+
+    .buttons {
+      display: flex;
+      margin: 18px 18px 0 0;
+
+      @media (max-width: 530px) {
+        flex-direction: column;
+      }
+    }
+  }
+
   .tit h1 {
     color: var(--gradhumanas);
   }
@@ -42,50 +58,8 @@ export const Container = styled.div`
     display: flex;
     flex: 1;
     justify-content: space-between;
+    margin-top: 90px;
   }
-
-  /* .container .arvore {
-    display: flex;
-    flex-direction: column;
-    background-color: #444;
-    width: 16vw;
-  }
-
-  .container .arvore a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    background-color: white;
-    cursor: pointer;
-  }
-
-  .container .arvore li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    width: 35px;
-    border: 2px solid var(--gradhumanas);
-    border-radius: 50%;
-    margin: 0 0 8px 18px;
-    color: black;
-    background: #fff;
-    list-style-position: inside;
-    list-style: none;
-  }
-
-  .container .arvore .cap {
-    height: 45px;
-    width: 45px;
-    border: 2px solid var(--gradhumanas);
-    border-radius: 50%;
-    margin: 0 0 8px 8px;
-    color: black;
-    background: #fff;
-    list-style-position: inside;
-    list-style: none;
-  } */
 
   .container .texto {
     display: flex;
@@ -94,7 +68,7 @@ export const Container = styled.div`
     width: 66vw;
     text-align: justify;
     background-color: whitesmoke;
-    margin: 0 0 0 0px;
+    margin: 0 8px 0 0px;
     border-radius: 10px;
   }
 

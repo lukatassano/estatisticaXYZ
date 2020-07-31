@@ -4,43 +4,75 @@ export const Container = styled.div`
   header {
     display: flex;
     flex: 1;
+    height: 100px;
+    justify-content: space-between;
+
+    .buttons {
+      display: flex;
+      margin: 18px 18px 0 0;
+
+      @media (max-width: 530px) {
+        flex-direction: column;
+      }
+    }
   }
 
   .nos {
     .texto {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
 
-      h1 {
-        color: var(--secundaria);
-        opacity: 80%;
-      }
+    h1 {
+      color: var(--secundaria);
+      font-weight: 100;
+      color: #444;
+      font-size: 70px;
+      opacity: 100%;
 
-      h3 {
-        margin-top: 38px;
-        text-align: justify;
-        width: 688px;
-
-        @media (max-width: 600px) {
-          text-align: start;
-          width: 250px;
-        }
+      @media (max-width: 600px) {
+        font-size: 40px;
+        width: 95vw;
       }
     }
+
+    h3 {
+      margin-top: 38px;
+      font-size: 24px;
+      color: #444;
+      font-weight: 700;
+      text-align: start;
+      width: 70vw;
+      font-weight: 200;
+
+      @media (max-width: 600px) {
+        font-size: 18px;
+        width: 90vw;
+      }
+    }
+  }
       .grade {
-        display: flex;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-        margin: 220px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: auto;
+        list-style: none;
+        width: 100%;
+        margin-top: 200px;
         background-color: var(--secundaria);
+        
+        @media (max-width: 1085px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
 
         #luka {
           background-color: var(--ensinomedio);
           align-items: left;
+          
+          @media (max-width: 1085px) {
+            align-items: center;
+          }   
         }
 
         #guilherme {
@@ -51,6 +83,10 @@ export const Container = styled.div`
         #chico {
           background-color: var(--gradexatas);
           align-items: flex-end;
+
+          @media (max-width: 1085px) {
+            align-items: center;
+          }
         }
 
         .cont {
@@ -60,15 +96,27 @@ export const Container = styled.div`
           width: 360px;
           border-radius: 14px;
           background-color: #fff;
-          margin: 0 50px;
+          /* margin: 0 50px; */
           padding: 0 20px;
-          cursor: pointer;
           transform: translateY(-100px);
           transition: 1.8s;
+          display: flex;
+          margin: 0 auto;
+
+          @media (max-width: 1085px) {
+            /* width: 350px; */
+            /* height: 250px; */
+            /* transform: translateY(-180px); */
+            margin-top: 88px;
+          }
+
+          @media (max-width: 380px) {
+            width: 320px;
+          }
 
           &:hover {
             transform: translateY(-110px);
-            box-shadow: 0 0 200px #fff;
+            box-shadow: 0 0 120px #fff;
           }
 
           &:hover img.avatar {
@@ -135,9 +183,17 @@ export const Container = styled.div`
               justify-self: center;
               transition: 0.3s;
               
+              @media (max-width: 380px) {
+                margin: 0 3px 10px;
+              }
+              
               &:hover {
                 border-radius: 30%;
                 background: #ffffff90;
+              }
+
+              &:active {
+                transform: translateY(3px);
               }
 
               img {
@@ -164,7 +220,8 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
+    transform: translateY(-2px);
 
     h2 {
       color: var(--claro);
@@ -178,9 +235,9 @@ export const Container = styled.div`
         list-style: none;
         margin-top: 38px;
         text-align: center;
-        width: 688px;
+        /* width: 688px; */
         color: var(--fundo);
-        font-size: 22px;
+        /* font-size: 22px; */
         text-decoration: none;
         transition: 0.3s;
 

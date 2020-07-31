@@ -15,17 +15,20 @@ import Linkedin from "../../assets/linkedinescuro.svg";
 import Email from "../../assets/@escuro.svg";
 import Site from "../../assets/wwwescuro.svg";
 
-import { FaLinkedinIn } from "react-icons/fa";
-
 // import "./styles.css";
 import { Container } from "./styles";
 
 const sobrenos: React.FC = () => {
+  window.scrollTo(0, 0);
+
   return (
     <Container>
       <header>
         <Logo color={colors.secundaria} />
-        <Button to="/" title="Página inicial" color={colors.secundaria} />
+
+        <div className="buttons">
+          <Button to="/" title="Página inicial" color={colors.secundaria} />
+        </div>
       </header>
 
       <div className="nos">
@@ -52,10 +55,10 @@ const sobrenos: React.FC = () => {
               Node.js.
             </p>
             <div className="contato">
-              <a href="mailto:lukatassano070@gmail.com">
+              <a href="mailto:lukatassano@estatistica.xyz">
                 <img src={Email} alt="Email do Luka"></img>
               </a>
-              <a href="https://lukatassano.herokuapp.com/" target="_blank">
+              <a href="https://lukatassano.com/" target="_blank">
                 <img src={Site} alt="Site do Luka"></img>
               </a>
               <a href="https://github.com/lukatassano" target="_blank">
@@ -85,7 +88,7 @@ const sobrenos: React.FC = () => {
             </p>
 
             <div className="contato">
-              <a href="mailto:elias.doering@ufrgs.br">
+              <a href="mailto:geliasrd@estatistica.xyz">
                 <img src={Email} alt="Email do Guilherme"></img>
               </a>
               {/* <!-- <a href="https://geliasrd.github.io/" target="_blank">
@@ -113,7 +116,7 @@ const sobrenos: React.FC = () => {
             </p>
 
             <div className="contato">
-              <a href="mailto:franciscopires2000@gmail.com">
+              <a href="mailto:francisco.pires@estatistica.xyz">
                 <img src={Email} alt="Email do Francisco"></img>
               </a>
               <a

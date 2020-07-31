@@ -7,17 +7,25 @@ import colors from "../../colors";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
 import Logo from "../../components/Logo";
+import logo from "../../assets/logos/logoestxyz.svg";
+// import LogoXYZ from "../../components/LogoXYZ";
 
 // import "./styles.css";
 
 import { Container } from "./styles";
 
 const home: React.FC = () => {
+  window.scrollTo(0, 0);
+
   return (
     <Container>
       <header>
         <Logo color={colors.secundaria} />
-        <Button to="/sobre-nos" title="Sobre nós" color={colors.secundaria} />
+        {/* <img src={logo} alt="" /> */}
+
+        <div className="buttons">
+          <Button to="/sobre-nos" title="Sobre nós" color={colors.secundaria} />
+        </div>
       </header>
 
       <div className="texto">

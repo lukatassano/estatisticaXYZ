@@ -1,11 +1,11 @@
-export const lista = [
+const list = [
   {
     title: "curso",
     href: "url",
     number: "1",
     articles: [
       {
-        title: "artigo1",
+        title: "ssssjfewjefjwejfwejewjfjjfewjejjfkwejjewjewj",
         href: "url",
       },
       {
@@ -18,6 +18,50 @@ export const lista = [
       },
       {
         title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo4",
+        href: "url",
+      },
+      {
+        title: "artigo11",
+        href: "url",
+      },
+      {
+        title: "artigo11",
         href: "url",
       },
     ],
@@ -161,3 +205,5 @@ export const lista = [
     ],
   },
 ];
+
+export default list;

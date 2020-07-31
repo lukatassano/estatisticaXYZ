@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 // import { useHistory } from "react-router-dom";
 
 import colors from "../../../colors";
@@ -6,7 +7,7 @@ import colors from "../../../colors";
 import Logo from "../../../components/Logo";
 import Button from "../../../components/Button";
 import Footer from "../../../components/Footer";
-import Tree from "../../../components/Tree";
+import MiniTree from "../../../components/MiniTree";
 
 // import "./conteudo.css";
 import { Container } from "./styles";
@@ -18,6 +19,9 @@ const conteudo: React.FC = () => {
   // function handleSubmit(url: string) {
   //   history.push(`${url}`);
   // }
+  window.scrollTo(0, 0);
+
+  const markdown = "# Titulo";
 
   return (
     <Container>
@@ -34,9 +38,10 @@ const conteudo: React.FC = () => {
       </header>
 
       <div className="container">
-        <Tree />
+        <MiniTree />
 
         <div className="texto">
+          <ReactMarkdown source={markdown} escapeHtml={false} />
           <h1>Título!!</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quod

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FormEvent } from "react";
 import { useHistory } from "react-router-dom";
 
 import { Botao } from "./styles";
@@ -12,7 +12,8 @@ interface Props {
 const Button: React.FC<Props> = ({ to, title, color }) => {
   const history = useHistory();
 
-  function handleSubmit() {
+  function handleSubmit(event: FormEvent) {
+    event.preventDefault();
     history.push(`${to}`);
   }
 

@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* width: 100vw; */
-  height: auto;
+  width: 100vw;
+  height: auto; */
 
   .contents {
     display: flex;
@@ -14,11 +14,11 @@ export const Container = styled.div`
     align-items: center;
     width: auto;
     margin: 50px 0;
-    /* transform: perspective(5000px) rotateY(55deg); */
+    transform: perspective(5000px) rotateY(55deg);
     transition: 1s;
 
     &:hover {
-      /* transform: perspective(5000px) rotateY(5deg) translateX(80px); */
+      transform: perspective(5000px) rotateY(5deg) translateX(80px);
     }
 
     .content {
@@ -28,33 +28,32 @@ export const Container = styled.div`
       align-items: center;
       margin: 10px;
 
+      &:hover .topics ol {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        height: auto;
+        max-height: 1000px;
+      }
+
       .title {
         display: flex;
         flex-direction: row;
         text-align: center;
         height: 50px;
-        width: 60vw;
+        width: 300px;
         align-items: center;
         justify-content: start;
         background: var(--secundaria);
         border-radius: 40px 28px 28px 40px;
         border: 0;
 
-        @media (max-width: 760px) {
-          width: 80vw;
-        }
-
         h1 {
           font-size: 20px;
-          font-size: 48px;
+          font-size: 50px;
           -webkit-text-stroke: 1px #eee;
           color: transparent;
           align-self: center;
           margin-left: 32px;
-
-          @media (max-width: 760px) {
-            font-size: 28px;
-          }
         }
 
         .number {
@@ -66,7 +65,7 @@ export const Container = styled.div`
           align-items: center;
           justify-content: center;
 
-          background: var(--gradhumanas);
+          background: var(--claro);
           border-radius: 28px;
           /* transition: 0.3s; */
 
@@ -87,16 +86,12 @@ export const Container = styled.div`
         display: flex;
         background-color: var(--claro);
         overflow: hidden;
-        width: 54vw;
+        width: 250px;
         /* height: 300px; */
         border-radius: 0 0 8px 8px;
-        padding: 8px;
+        /* padding: 0px px 0 0px; */
         /* white-space: nowrap; */
         /* overflow: hidden; */
-
-        @media (max-width: 760px) {
-          width: 68vw;
-        }
 
         ol {
           list-style: none;
@@ -104,11 +99,11 @@ export const Container = styled.div`
           font-size: 16px;
           /* overflow: hidden; */
           color: #fff;
-          height: auto;
+          max-height: 0;
           font-weight: 400;
           /* margin: 8px 0 0px; */
-
-          transition: 3s;
+          transition: 2s;
+          /* transition: margin 0.2s; */
 
           li {
             margin-left: 28px;
@@ -116,22 +111,29 @@ export const Container = styled.div`
             a {
               text-overflow: ellipsis;
 
-              font-size: 18px;
+              font-size: 14px;
               color: #eee;
               font-weight: 500;
               cursor: pointer;
               transition: 0.3s;
 
-              @media (max-width: 600px) {
-                font-size: 14px;
-              }
-
               &:hover {
                 color: #ddd;
               }
             }
+
+            #articleSelected {
+              color: #444;
+              cursor: not-allowed;
+            }
           }
         }
+      }
+
+      #topicSelected ol {
+        max-height: 1000px;
+        margin-top: 8px;
+        margin-bottom: 8px;
       }
     }
   }

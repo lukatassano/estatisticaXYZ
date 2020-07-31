@@ -4,9 +4,19 @@ export const Container = styled.div`
   header {
     display: flex;
     flex: 1;
+    height: 100px;
+    justify-content: space-between;
 
-    
+    .buttons {
+      display: flex;
+      margin: 18px 18px 0 0;
+
+      @media (max-width: 530px) {
+        flex-direction: column;
+      }
+    }
   }
+
 
   .texto {
     display: flex;
@@ -45,8 +55,10 @@ export const Container = styled.div`
   }
 
   .gradecursos {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: auto;
+    list-style: none;
     width: 100%;
     padding: 50px 0;
     margin-top: 200px;
@@ -54,8 +66,8 @@ export const Container = styled.div`
     justify-content: center;
     background-color: var(--secundaria);
 
-    @media (max-width: 800px) {
-      flex-direction: column;
+    @media (max-width: 1085px) {
+      grid-template-columns: repeat(1, 1fr);
     }
 
     .bloco {
@@ -64,17 +76,18 @@ export const Container = styled.div`
       outline: none;
       border-radius: 8px;
       color: black;
-      margin: 0 50px;
+      margin: 0 auto;
       transform: translateY(-130px);
 
-      @media (max-width: 900px) {
-        width: 250px;
+      @media (max-width: 1085px) {
+        /* width: 250px; */
+        /* height: 250px; */
         margin-top: 20px;
       }
 
       @media (max-width: 1200px) {
-        width: 250px;
-        margin: 20px 5px;
+        /* width: 250px; */
+        /* margin: 20px 3%; */
       }
 
       &:hover {
@@ -86,6 +99,11 @@ export const Container = styled.div`
         padding: 40px 20px;
         height: 550px;
         width: 360px;
+      }
+
+      @media (max-width: 400px) {
+        height: auto;
+        width: 300px;
       }
   }
 
@@ -118,6 +136,7 @@ export const Container = styled.div`
 
   .bloco .link .curso ul {
     color: #eee;
+    margin-left: 18px;
   }
 
   .bloco a .curso ul .sub {
@@ -137,14 +156,4 @@ export const Container = styled.div`
     background-color: var(--gradexatas);
   }
 
-  @media (max-width: 600px) {
-
-    .gradecursos {
-    }
-
-    .bloco {
-      width: 250px;
-      margin-top: 20px;
-    }
-  }
 `;
