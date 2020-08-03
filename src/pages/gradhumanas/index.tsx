@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
+// import { useHistory } from "react-router-dom";
 
-import colors from "../../colors";
+// import colors from "../../colors";
 
-import Logo from "../../components/Logo";
-import Button from "../../components/Button";
+import Header from "../../components/Header";
 import Tree from "../../components/Tree";
 import Footer from "../../components/Footer";
 
@@ -14,28 +13,17 @@ import { Container } from "./styles";
 
 const gradhumanas: React.FC = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const history = useHistory();
+  // const history = useHistory();
 
   window.scrollTo(0, 0);
 
-  function handleSubmit() {
-    history.push("/grade-humanas/conteudo");
-  }
+  // function handleSubmit() {
+  //   history.push("/grade-humanas/conteudo");
+  // }
 
   return (
     <Container>
-      <header>
-        <Logo color={colors.gradhumanas} />
-
-        <div className="buttons">
-          <Button
-            to="/sobre-nos"
-            title="Sobre nós"
-            color={colors.gradhumanas}
-          />
-          <Button to="/" title="Página inicial" color={colors.gradhumanas} />
-        </div>
-      </header>
+      <Header />
 
       <div className="texto">
         <h1>Graduação em Humanas</h1>
