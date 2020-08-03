@@ -2,8 +2,9 @@ import React from "react";
 import colors from "../../colors";
 // import { Link } from "react-router-dom";
 
-import Logo from "../../components/Logo";
-import Button from "../../components/Button";
+import Header from "../../components/Header";
+// import Logo from "../../components/Logo";
+// import Button from "../../components/Button";
 import Footer from "../../components/Footer";
 
 import Luka from "../../assets/avatar/luka.jpg";
@@ -23,13 +24,7 @@ const sobrenos: React.FC = () => {
 
   return (
     <Container>
-      <header>
-        <Logo color={colors.secundaria} />
-
-        <div className="buttons">
-          <Button to="/" title="Página inicial" color={colors.secundaria} />
-        </div>
-      </header>
+      <Header />
 
       <div className="nos">
         <div className="texto">
