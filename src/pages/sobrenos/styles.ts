@@ -1,22 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  header {
-    display: flex;
-    flex: 1;
-    height: 100px;
-    justify-content: space-between;
-
-    .buttons {
-      display: flex;
-      margin: 18px 18px 0 0;
-
-      @media (max-width: 530px) {
-        flex-direction: column;
-      }
-    }
-  }
-
   .nos {
     .texto {
     display: flex;
@@ -56,13 +40,17 @@ export const Container = styled.div`
       .grade {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: auto;
+        gap: 80px;
         list-style: none;
         width: 100%;
         margin-top: 200px;
         background-color: var(--secundaria);
         
-        @media (max-width: 1085px) {
+        @media (max-width: 1250px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 830px) {
           grid-template-columns: repeat(1, 1fr);
         }
 
