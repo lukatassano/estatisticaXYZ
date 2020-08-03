@@ -7,14 +7,26 @@ export const Container = styled.footer`
   width: 100%;
   height: 70px;
   border: 0;
-  margin-top: 60px;
+  margin-top: 100px;
   align-items: center;
   justify-content: space-between;
   background-color: var(--fundo);
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 
   @media (max-width: 600px) {
-    justify-content: space-around;
+    /* justify-content: space-around; */
+  }
+
+  div {
+    img {
+      margin-left: 50px;
+      width: 400px;
+
+      @media (max-width: 670px) {
+        width: 200px;
+        margin-left: 30px;
+      }
+    }
   }
 
   .centro {
@@ -38,11 +50,12 @@ export const Container = styled.footer`
     }
   }
 
-  .logo {
-    /* font-size: 38px; */
-    /* margin-left: 80px; */
+  /* .logo {
+    font-size: 38px;
+    margin-left: 80px;
     margin-left: 50px;
     width: 400px;
+    height: 0;
 
     @media (max-width: 670px) {
       width: 200px;
@@ -58,7 +71,7 @@ export const Container = styled.footer`
       margin-left: 0;
       font-size: 18px;
     }
-  }
+  } */
 
   ul {
     display: flex;
