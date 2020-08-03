@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 
 import colors from "../../colors";
 
+import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Button from "../../components/Button";
-import Logo from "../../components/Logo";
-import logo from "../../assets/logos/logoestxyz.svg";
+// import logo from "../../assets/logos/logoestxyz.svg";
 // import LogoXYZ from "../../components/LogoXYZ";
 
 // import "./styles.css";
@@ -19,14 +18,7 @@ const home: React.FC = () => {
 
   return (
     <Container>
-      <header>
-        <Logo color={colors.secundaria} />
-        {/* <img src={logo} alt="" /> */}
-
-        <div className="buttons">
-          <Button to="/sobre-nos" title="Sobre nós" color={colors.secundaria} />
-        </div>
-      </header>
+      <Header />
 
       <div className="texto">
         <h1>
