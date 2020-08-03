@@ -1,23 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  header {
-    display: flex;
-    flex: 1;
-    height: 100px;
-    justify-content: space-between;
-
-    .buttons {
-      display: flex;
-      margin: 18px 18px 0 0;
-
-      @media (max-width: 530px) {
-        flex-direction: column;
-      }
-    }
-  }
-
-
   .texto {
     display: flex;
     flex-direction: column;
@@ -57,7 +40,7 @@ export const Container = styled.div`
   .gradecursos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: auto;
+    gap: 50px;
     list-style: none;
     width: 100%;
     padding: 50px 0;
@@ -66,7 +49,11 @@ export const Container = styled.div`
     justify-content: center;
     background-color: var(--secundaria);
 
-    @media (max-width: 1085px) {
+    @media (max-width: 1250px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 830px) {
       grid-template-columns: repeat(1, 1fr);
     }
 
