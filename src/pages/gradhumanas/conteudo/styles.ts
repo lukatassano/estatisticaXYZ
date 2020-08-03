@@ -1,31 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  /* body header {
-  display: flex;
-  justify-content: space-between;
-} */
-
-  /* body header div {
-  margin: 20px 50px;
-} */
-
-  header {
-    display: flex;
-    flex: 1;
-    height: 100px;
-    justify-content: space-between;
-
-    .buttons {
-      display: flex;
-      margin: 18px 18px 0 0;
-
-      @media (max-width: 530px) {
-        flex-direction: column;
-      }
-    }
-  }
-
   .tit h1 {
     color: var(--gradhumanas);
   }
@@ -65,7 +40,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 40px 30px;
-    width: 66vw;
+    width: 48vw;
     text-align: justify;
     background-color: whitesmoke;
     margin: 0 8px 0 0px;
