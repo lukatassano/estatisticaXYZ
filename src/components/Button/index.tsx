@@ -14,7 +14,7 @@ const Button: React.FC<Props> = ({ to, title, color }) => {
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    history.push(`${to}`);
+    history.push(to);
   }
 
   return (

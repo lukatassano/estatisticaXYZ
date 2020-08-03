@@ -31,7 +31,7 @@ export const Botao = styled.div`
     border-bottom: 5px solid ${({ color }) => color};
     border-left: 5px solid ${({ color }) => color};
     box-shadow: 5px -5px 15px ${({ color }) => color};
-
+    
     p {
       transform: perspective(100px) translate3d(2px, -2px, 0);
     }
