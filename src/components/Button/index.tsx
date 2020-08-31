@@ -1,7 +1,7 @@
-import React, { FormEvent } from "react";
-import { useHistory } from "react-router-dom";
+import React, { FormEvent } from 'react';
+import { useHistory } from 'react-router-dom';
 
-import { Botao } from "./styles";
+import { Botao } from './styles';
 
 interface Props {
   to: string;

@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 // import { useHistory } from "react-router-dom";
 
 // import colors from "../../colors";
 
-import Header from "../../components/Header";
-import Tree from "../../components/Tree";
-import Footer from "../../components/Footer";
+import Header from '../../components/Header';
+import Tree from '../../components/Tree';
+import Footer from '../../components/Footer';
 
 // import "./styles.css";
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
 const gradhumanas: React.FC = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks

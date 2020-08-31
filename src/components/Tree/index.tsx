@@ -1,9 +1,9 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-import { Container } from "./styles";
+import { Container } from './styles';
 
-import list from "../../articles";
+import list from '../../articles';
 
 const Tree: React.FC = () => {
   const history = useHistory();

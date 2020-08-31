@@ -1,15 +1,15 @@
-import React from "react";
-import ReactMarkdown from "react-markdown";
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 // import { useHistory } from "react-router-dom";
 
 // import colors from "../../../colors";
 
-import Header from "../../../components/Header";
-import Footer from "../../../components/Footer";
-import MiniTree from "../../../components/MiniTree";
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import MiniTree from '../../../components/MiniTree';
 
 // import "./conteudo.css";
-import { Container } from "./styles";
+import { Container } from './styles';
 
 const conteudo: React.FC = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -20,7 +20,7 @@ const conteudo: React.FC = () => {
   // }
   window.scrollTo(0, 0);
 
-  const markdown = "# Titulo";
+  const markdown = '# Titulo';
 
   return (
     <Container>
@@ -158,7 +158,7 @@ const conteudo: React.FC = () => {
           </p>
         </div>
 
-        <div className="ad"></div>
+        <div className="ad" />
       </div>
       <Footer />
     </Container>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Botao = styled.div`
   display: flex;
@@ -24,14 +24,13 @@ export const Botao = styled.div`
     transition: 0.3s;
   }
 
-
   &:hover {
     opacity: 100%;
     /* color: #333; */
     border-bottom: 5px solid ${({ color }) => color};
     border-left: 5px solid ${({ color }) => color};
     box-shadow: 5px -5px 15px ${({ color }) => color};
-    
+
     p {
       transform: perspective(100px) translate3d(2px, -2px, 0);
     }
